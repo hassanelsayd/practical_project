@@ -1,0 +1,401 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    
+}
+
+
+#scrollUp{
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  border:none;
+  background-color: #1e6282;
+  color:#FFF;
+  width: 50px;
+  height:50px;
+  border-radius:50%;
+  font-size: 20px;
+  z-index: 2;
+  outline: none;
+}
+
+#scroolUp:active{
+  background-color:#e38b02;
+
+}
+
+
+
+.navbar-dark.bg-primary{
+    background-color:#40394a !important;
+    
+
+}
+.navbar-brand{font-weight: bold}
+.navbar-dark .navbar-nav .nav-link{
+    color:#fff
+}
+.navbar-dark .navbar-nav .nav-link.getStarted{
+    border-radius: 30px;
+    border:2px solid #47b2e4;
+    padding:5px 20px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    color:#fff
+}
+.navbar-dark .navbar-nav .nav-link.getStarted:hover{
+    background-color: #47b2e4
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link{
+    color:#47b2e4
+}
+
+.main-slide{
+    background-color: #40394a;
+    color:#fff;
+    padding:100px 0
+}
+
+.main-slide img{width: 100%}
+.text-main{
+    margin-top: 170px
+}
+.text-main h1{font-weight: bold}
+.text-main h1,.text-main h4{
+    margin-bottom: 30px
+}
+.text-main button,.text-main p{display: inline-block}
+.text-main button{
+    border-radius:20px;
+    background-color: #47b2e4;
+    padding:5px 20px;
+    border:0;
+    color:#fff;
+    font-weight: 500;
+    transition: all 0.5s ease
+}
+.text-main button:hover{
+    background-color: #2c86b0
+}
+.text-main p{cursor: pointer;}
+.text-main p i{transition: all 0.5s ease-in-out}
+.text-main p:hover i{transform: rotate(360deg)}
+.fa-play:before{
+    content: "\f04b";
+    margin: 0 15px;
+   
+    
+}
+
+.svg-img{
+    transition: all 1s ease-in-out;
+    animation: 2s trans ease infinite
+}
+@keyframes trans{
+    0%,100%{
+        transform: translateY(0)
+    }
+    20%{
+        transform: translateY(10px)
+    }
+    40%{
+        transform: translateY(20px)
+    }
+     60%{
+        transform: translateY(20px)
+    }
+     80%{
+        transform: translateY(10px)
+    }
+    
+}
+
+/*Start About Us Section*/
+.about{
+    padding:70px 0;background-color: #fff
+}
+.about h2{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    color:#1e6282
+}
+.about ul{
+list-style: none;
+    padding: 0;
+    margin-bottom: 50px
+}
+.about ul li i{
+color: #47b2e4}
+.about button{
+    background: transparent;
+    border:2px solid  #47b2e4;
+    padding:5px 20px;
+    border-radius:5px;
+    color: #47b2e4;
+    transition:all 0.5s ease-in-out
+}
+
+.about button:hover{
+    background-color:  #47b2e4;
+    color:#fff
+}
+/*End About Us Section*/
+
+
+/*start qs*/
+.questions{background-color: #f3f5fa;padding: 70px 0}
+.questions h3{color:#1e6282; font-size: 35px}
+.questions p{color:#777}
+.questions img{width: 100%;margin-top: 150px}
+.questions h3 span{font-weight: bold}
+.card-header{background-color: #fff;}
+.card-header h2:hover{text-decoration: none}
+.accordion .card .card-header h2{outline: none}
+.accordion .card .card-header button span{font-weight: bold;
+    font-size: 25px;}
+/*end qs*/
+
+/*Start Status*/
+.status{padding: 70px 0;background-color: #fff}
+.status img{width: 100%}
+.status h2{font-weight: bold;color:#1e6282}
+.status span{color:#1e6282;font-weight: bold;text-transform: uppercase;margin-bottom: 5px}
+.status .l-prog{float: left}
+.status .r-prog{float: right;}
+.status .progress{clear: both;margin-bottom: 5px;border-radius: 0;height: 5px}
+.status .progress-bar{background-color: #1e6282}
+/*End Status*/
+
+
+/*Start Services*/
+.serve{padding:70px 0;background-color:#f3f5fa}
+.serve h2{color:#1e6282;font-weight: bold;font-size: 35;text-transform: uppercase}
+.serve .serve-opt{
+    background-color: #fff;padding:30px 15px;
+    margin-top: 35px;transition:all .5s ease;
+    border-radius: 8px
+}
+.serve .serve-opt:hover{
+    transform: translateY(-15px)
+}
+.serve .serve-opt:hover h3{
+    color:#47b2e4
+}
+.serve .serve-opt i {
+    color:#47b2e4;font-size: 35px;margin-bottom: 30px;
+}
+.serve .serve-opt h3{color:#1e6282}
+.serve .serve-opt p{color:#777}
+/*End Services*/
+
+
+/*Start Sign In*/
+.signin{
+    background: url('../images/sign.jpg');
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;color:#fff
+}
+.signin .overlay{position: absolute;background-color: rgba(30,98,130,0.8);top:0;left:0;width: 100%;height: 100%}
+.signin button{
+    border-radius:20px;
+    background-color: transparent;
+    padding:5px 30px;
+    border:0;
+    color:#fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border:2px solid #fff;
+    margin-top:50px;
+    float: right
+}
+.signin button:hover{
+    background-color:#47b2e4;border:2px solid #47b2e4;
+}
+.signin h2{font-weight: bold}
+.signin p{font-size: 18px;line-height: 1.4}
+/*End Sign In*/
+
+/*Start Team */
+.team{
+    
+    padding:70px 0;background-color:#f3f5fa;
+}
+.team-h{
+    color:#1e6282;font-weight: bold;font-size: 35;
+}
+
+
+.team .team-opt{
+    margin-top: 20px; background-color: #fff;
+    padding:20px;
+    border-radius: 5px;
+    transition:all .5s ease;
+}
+.team .team-opt:hover{
+    transform: translateY(-15px)
+}
+.team .team-opt h3{
+    color:#1e6282;font-weight: bold;
+}
+.team .team-opt i{font-size: 22px;color:#777}
+.team .team-opt i:hover{
+    color:#47b2e4
+}
+.team img{width: 100%}
+/*End Team */
+
+
+/*Start Courses*/
+.courses {
+    padding: 70px 0
+}
+.courses h2{font-weight: bold;color:#1e6282;font-size: 35px;text-transform: uppercase}
+.courses .main-course h3{color:#1e6282;font-weight: bold;margin:20px 0}
+.courses .main-course img{width: 100%;transition: all 1s ease}
+.courses .main-course img:hover{transform: scale(1.1)}
+/*End Courses*/
+
+
+/*Start Pricing*/
+
+.pricing{
+    padding:70px 0;
+    background-color:#f3f5fa
+}
+.plan-opt{
+    background-color: #fff;
+    padding:30px;
+    border-radius: 10px;
+    margin-top: 40px
+}
+.pricing h2{
+    color:#1e6282;font-weight: bold;font-size: 35;
+}
+
+.pricing ul{list-style: none;padding: 0}
+.pricing ul li i{color:#47b2e4 }
+.pricing h4{
+    color:#1e6282; font-weight: bold
+}
+.plan-opt p{color:#777; font-size: 18px;font-weight: bold;margin-bottom: 0}
+.plan-opt span{color:#1e6282; }
+.plan-opt ul{
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+.plan-opt ul li{
+    margin-bottom: 15px
+}
+.plan-opt a{
+    border-radius:20px;
+    background-color: transparent;
+    padding:5px 30px;
+    border:0;
+    color:#000;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border:2px solid #47b2e4;
+    font-weight: bold;
+}
+.plan-opt a:hover{
+        background-color: #47b2e4;
+        color: #fff !important;
+        
+
+}
+.main-plan{
+    border-top:4px solid #47b2e4;
+    transform: translateY(-30px)
+}
+/*End Pricing*/
+
+
+/*Start Newsteller*/
+.newsteller{
+    padding: 70px 0
+}
+.newsteller h2{font-weight: bold;color:#1e6282}
+.newsteller form{
+    text-align: center;
+}
+.newsteller form input{
+    border:0;
+    width: 400px;
+    border-radius: 20px;
+    outline: none;
+    padding: 5px 20px;
+    border:1px solid #ccc
+}
+.newsteller form a{
+    text-decoration: none;
+    background: #47b2e4;
+    color:#fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    
+
+}
+
+
+/*End Newsteller*/
+
+
+/*Start Footer*/
+.footer{
+    padding: 70px 0;
+        background-color: #f3f5fa;
+
+}
+.footer h1,.footer h2{
+    font-weight: bold;color:#1e6282
+}
+.footer ul{
+    list-style: none;padding: 0
+}
+.footer ul li a{
+    color: #000 !important;
+    text-decoration: none
+}
+.footer ul li {margin-bottom: 15px}
+.footer i{font-size: 25px;color:#777;margin-right: 15px;transition: all .5s ease;
+    cursor: pointer}
+.footer ul li i{
+    color:#47b2e4;
+    font-size: 16px;
+    }
+.footer i:hover{color:#000}
+/*End Footer*/
+
+/*Start Copyright*/
+.copy{
+    background-color: #1e6282;padding: 20px 0;color: #fff;text-align: center;
+}
+.copy h3{font-size: 20px}
+/*End Copyright*/
+
+
+
+/*Start Media query*/
+@media (max-width:767px){
+    .newsteller form a{margin-top: 10px;display: inline-block}
+    .text-main{margin-top: 20px}
+    .status h2{margin-top: 20px}
+    .signin a{display: inline-block}
+    .courses .main-course img{margin-bottom: 20px}
+    .main-plan{transform: translateY(0);border: 0}
+}
+/*End Media query*/
+
